@@ -10,7 +10,7 @@ namespace LayoutsXamarin
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new StackLayoutDemo();
 		}
 
 		protected override void OnStart()
