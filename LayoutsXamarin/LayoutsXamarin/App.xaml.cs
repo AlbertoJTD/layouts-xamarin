@@ -10,7 +10,7 @@ namespace LayoutsXamarin
 		{
 			InitializeComponent();
 
-			MainPage = new FlexLayoutDemo();
+			MainPage = new FrameDemo();
 		}
 
 		protected override void OnStart()
