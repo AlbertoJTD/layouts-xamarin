@@ -10,7 +10,7 @@ namespace LayoutsXamarin
 		{
 			InitializeComponent();
 
-			MainPage = new AbsoluteLayoutDemo();
+			MainPage = new RelativeLayoutDemo();
 		}
 
 		protected override void OnStart()

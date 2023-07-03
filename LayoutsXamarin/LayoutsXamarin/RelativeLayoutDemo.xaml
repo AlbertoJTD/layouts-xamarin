@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutsXamarin.RelativeLayoutDemo">
+    <ContentPage.Content>
+        <RelativeLayout BackgroundColor="DarkRed">
+            <!--<Button Text="Click me"
+                    RelativeLayout.HeightConstraint="200"
+                    RelativeLayout.WidthConstraint="200"
+                    RelativeLayout.XConstraint="100"
+                    RelativeLayout.YConstraint="50"/>-->
+
+            <!--<Button Text="XAMARIN"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=100}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=50}"/>-->
+
+            <!--<Button Text="XAMARIN"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Constant=-250}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=50}"
+                    WidthRequest="250"/>-->
+
+            <Button Text="XAMARIN"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, Property=X, ElementName=btnHello, Constant=110}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Property=Y}"
+                    WidthRequest="250"/>
+
+            <Button Text="Hello"
+                    RelativeLayout.XConstraint="50"
+                    x:Name="btnHello"
+                    WidthRequest="100"/>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>
