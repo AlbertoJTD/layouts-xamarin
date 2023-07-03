@@ -10,7 +10,7 @@ namespace LayoutsXamarin
 		{
 			InitializeComponent();
 
-			MainPage = new FrameDemo();
+			MainPage = new ScrollViewDemo();
 		}
 
 		protected override void OnStart()
