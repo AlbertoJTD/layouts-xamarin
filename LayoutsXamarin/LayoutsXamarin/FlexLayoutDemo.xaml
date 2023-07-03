@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutsXamarin.FlexLayoutDemo">
+    <ContentPage.Content>
+        <!--<FlexLayout Direction="Row" AlignItems="Start">
+            <Button Text="Click me!" />
+            <Button Text="XAMARIN" />
+        </FlexLayout>-->
+
+        <FlexLayout Direction="Column">
+            <Label Text="Header"
+                   FontSize="Large"
+                   BackgroundColor="Aqua"
+                   HorizontalTextAlignment="Center" />
+
+            <FlexLayout FlexLayout.Grow="1">
+
+                <Label Text="Content"
+                   FontSize="Large"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   BackgroundColor="DarkKhaki"
+                   FlexLayout.Grow="1"/>
+
+                <BoxView FlexLayout.Basis="50"
+                         FlexLayout.Order="-1"
+                         Color="GreenYellow"/>
+
+                <BoxView FlexLayout.Basis="50"
+                         Color="DarkSlateBlue"/>
+            </FlexLayout>
+
+            <Label Text="Footer"
+                   FontSize="Large"
+                   BackgroundColor="LightPink"
+                   HorizontalTextAlignment="Center"/>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>
