@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LayoutsXamarin.GridDemo">
     <ContentPage.Content>
-        <Grid RowDefinitions=".4*, .5*, .1*" ColumnDefinitions="100, *"></Grid>
+        <Grid RowDefinitions=".3*, .7*" ColumnDefinitions="100, *"></Grid>
 
         <!--<Grid RowSpacing="0" ColumnSpacing="0">
             <Grid.RowDefinitions>
@@ -12,7 +12,7 @@
                 <RowDefinition Height=".7*" /> --><!-- Row 70% --><!--
             </Grid.RowDefinitions>
 
-            <Grid.ColumnDefinitions>
+            <Grid.ColumnDefinitions>A
                 --><!-- Number of columns: 2 --><!--
                 <ColumnDefinition Width="100" /> --><!-- Column 0 --><!--
                 <ColumnDefinition />

@@ -10,7 +10,7 @@ namespace LayoutsXamarin
 		{
 			InitializeComponent();
 
-			MainPage = new GridDemo();
+			MainPage = new AbsoluteLayoutDemo();
 		}
 
 		protected override void OnStart()
